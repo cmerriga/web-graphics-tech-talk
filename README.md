@@ -1,5 +1,5 @@
 # web-graphics-tech-talk
-https://github.com/cmerriga/web-graphics-tech-talk/blob/master/tech-talk.html
+http://htmlpreview.github.com/?https://github.com/cmerriga/web-graphics-tech-talk/blob/master/tech-talk.html
 
 Presentation for informal lunch series sporting JavaScript console.
 
