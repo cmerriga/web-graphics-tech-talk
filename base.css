@@ -1,0 +1,31 @@
+body {
+	margin: 0px;
+	padding: 20px;
+	border: 0px;
+	height: 100%;
+	background-color: rgb(200, 220, 255);
+	font-family: verdana, arial, sans-serif;
+	color: rgb(80, 80, 80);
+}
+
+h1 {
+	border-bottom: 2px solid;
+	color: rgb(20, 0, 60);
+}
+
+h2 {
+    color: rgb(20, 0, 60);
+}
+
+h3 {
+	margin-left: 20px;
+	color: rgb(20, 0, 60);
+}
+
+code {
+	margin: 1em;
+	border: 1px solid rgb(90, 40, 0);
+	background-color: rgb(240, 240, 200);
+	color: rgb(100, 50, 30);
+	padding: 10px;
+}

@@ -1,0 +1,21 @@
+typing is confined to single continuous string
+	when cursor moves, must find position in string
+
+window is grid of chars
+	when char is changed, its div is marked for redraw
+	redraws happen 30x/sec
+
+other windows can act as overlays for doing things like reversible print-ats
+
+on any window,
+	all covered divs are recalced on move/size
+	there can be subwindows whose positions are determined complicatedly
+	you can print char - char is an object with
+		char
+		process
+			process can take in change data and change the window to suit 
+		
+		
+
+on a wrapping window,
+	you can print string at

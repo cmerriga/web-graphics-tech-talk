@@ -1,0 +1,59 @@
+automatically connects to the localhost on the current port
+stays connected
+
+client attempts to process messages but defers to server if needed
+server processes messages
+	server routes to other servers as needed
+server considered home base -- typing at console assumed to be to server/client amalgam
+
+sample execution:
+connect chadd1 1999
+	sets server's standard message forwarding to this
+	throws out current connection and 
+
+context is chadd1.console => ">"
+	seeded with mru children from server
+user chooses chadd context => "chadd>"
+user chooses techtalk context =>"chadd.techtalk>"
+user chooses canvas context => "chadd.techtalk.canvas>"
+	can do custom operations
+	can visit children
+	can execute javascript
+	
+
+
+x http handler
+x accumulated cursor binks
+x command list roll-up
+x indexes for set
+x put cursor on div, one pixel lower
+x insert/overwrite cursor
+x limit add of command rotation
+x remove element from set before add
+x scroll bar hack
+o don't erase rest of text on Enter
+o F8 problem
+o right arrow at end of line bug
+o home and end keys
+o hscroll
+o change tracker lists
+o tab complete for recent words
+	o set of terms
+		o parse for groups
+			hierarchy of separators
+		o mru list
+			set with a max # and max time
+			each item has a time
+o local objects list for console context
+o on consoledisplay element resize, mark consoledisplay dirty
+	o next refresh takes console info and refactors it into line displays
+	o console stores all discrete changes as changes: write ops, cursor changes string by string and replays them
+		text w/color, lb, text w/color
+		should store complete change tree: each function does begin(name), end(name)
+o think about layers
+		
+
+o at end of input region, forward arrow expands given expression:
+	directory shows files and commands
+	o right arrow when partially typed but not recognized limits choices to those with that prefix
+	o right arrow while choices showing accepts current choice

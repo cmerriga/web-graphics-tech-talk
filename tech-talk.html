@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Console</title>
+        <script src="common.js" type="text/javascript">
+        </script>
+        <script src="scheduler.js" type="text/javascript">
+        </script>
+        <script src="display.js" type="text/javascript">
+        </script>
+        <script src="console.js" type="text/javascript">
+        </script>
+	<script src="tech-talk.js" type="text/javascript">
+	</script>
+        <script type="text/javascript">
+var gw;        
+var f;
+var can;
+var svg;
+var svgText;
+       
+function onDocumentLoad() {
+    var con = new Console(500, 60);
+    var dspConsole1 = new ConsoleDisplay(con, element('console-display-1'));
+    gw = element('graphics-window-1');
+    gw.style.visibility = 'hidden'; //'visible';
+    f = element('frame-1');
+    f.style.visibility = 'visible'; //'hidden';
+    can = element('canvas-1');
+    can.style.display = 'none';
+    svg = element('svg-wrapper-1');
+    svg.style.display = 'none';
+    svgText = element('svg-text-1');
+    svgText.style.display = 'none';
+    dspConsole1.focus();
+}
+        </script>
+        <style type="text/css">
+#body {
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(192, 192, 192);
+    font-family: courier new, sans-serif;
+    font-size: 8pt;
+}
+
+.console-display {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    width: 40em;
+    border-top: 2px solid rgb(128, 128, 128);
+    border-right: 2px solid rgb(255, 255, 255);
+    border-bottom: 2px solid rgb(255, 255, 255);
+    border-left: 2px solid rgb(128, 128, 128);
+    padding: 2px 4px;
+    background-color: rgb(40, 70, 75); 
+    color: rgb(192, 224, 255);
+    overflow: scroll;
+}
+
+.graphics-window {
+    position: absolute;
+    left: 41em;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    border-top: 2px solid rgb(128, 128, 128);
+    border-right: 2px solid rgb(255, 255, 255);
+    border-bottom: 2px solid rgb(255, 255, 255);
+    border-left: 2px solid rgb(128, 128, 128);
+    background-color: rgb(255, 255, 255); 
+}
+
+.frame {
+    position: absolute;
+    left: 41em;
+    height: 100%;
+    width: 80em;
+    border-top: 2px solid rgb(128, 128, 128);
+    border-right: 2px solid rgb(255, 255, 255);
+    border-bottom: 2px solid rgb(255, 255, 255);
+    border-left: 2px solid rgb(128, 128, 128);
+    background-color: rgb(255, 255, 255); 
+}
+        </style>
+    </head>
+    <body id="body" onload="onDocumentLoad()">
+        <div id="console-display-1" class="console-display"></div>
+        <div id="graphics-window-1" class="graphics-window">
+            <canvas id="canvas-1" width="500" height="500" style="border: 1px dashed gray; margin: 10px;"></canvas>
+            <div id="svg-wrapper-1" style="height: 60%;">
+                <svg id="svg-1" version="1.1" baseProfile="full" xmlns="http://www.w3.org/2000/svg" />
+            </div>
+            <div id="svg-text-1" style="background-color: rgb(220, 220, 220); border: 1px solid black; height: 39%; font-size: 12pt;"></div>
+        </div>
+        <iframe id="frame-1" class="frame" src=""></iframe>
+    </body>
+</html>

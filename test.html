@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Console</title>
+        <script src="common.js" type="text/javascript">
+        </script>
+        <script src="scheduler.js" type="text/javascript">
+        </script>
+        <script src="color.js" type="text/javascript">
+        </script>
+        <script src="console.js" type="text/javascript">
+        </script> 
+	<script src="text.js" type="text/javascript">
+	</script>
+        <script type="text/javascript">
+function onDocumentLoad() {
+    var con = new Console(60, 100);
+    var dspConsole = new ConsoleDisplay(con, element("console"));
+    dspConsole.focus();
+}
+        </script>
+        <style type="text/css">
+#body {
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(192, 192, 192);
+}
+
+#console {
+    height: 90%;
+    width: 60em;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 2px solid rgb(128, 128, 128);
+    border-right: 2px solid rgb(255, 255, 255);
+    border-bottom: 2px solid rgb(255, 255, 255);
+    border-left: 2px solid rgb(128, 128, 128);
+    padding: 2px 4px;
+    background-color: rgb(65, 108, 112); 
+    color: rgb(192, 224, 255);
+    font-family: courier new, sans-serif;
+    font-size: 10pt;
+}
+        </style>
+    </head>
+    <body id="body" onload="onDocumentLoad()">
+        <div id="console"></div>
+    </body>
+</html>

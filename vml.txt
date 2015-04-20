@@ -1,0 +1,17 @@
+<HTML 
+    xmlns:v="urn:schemas-microsoft-com:vml"
+    xmlns:o="urn:schemas-microsoft-com:office:office">
+    <HEAD>
+        <STYLE>
+            v\:* { behavior: url(#default#VML);}
+            o\:* { behavior: url(#default#VML);}
+        </STYLE>
+        <TITLE>VML Sample</TITLE>
+    </HEAD>
+    <BODY>
+       <v:roundrect
+           fillcolor="green"
+           style="position:relative;top:1;left:1;width:200;height:200">
+       </v:roundrect>
+    </BODY>
+</HTML>     

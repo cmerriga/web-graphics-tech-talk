@@ -1,0 +1,102 @@
+techtalk tuesday 11/22
+
+raster graphics on web browsers
+    o ascii art
+    o 
+vector graphics:
+    plotters, tempest/asteroids, postscript, truetype
+    not bitmaps, .jpgs,
+    
+    o html5
+        canvas element
+            <canvas id="example" width="200" height="200">
+            This text is displayed if your browser does not support HTML5 Canvas.
+            </canvas>
+            var example = document.getElementById('example');
+            var context = example.getContext('2d');
+            context.fillStyle = "rgb(255,0,0)";
+            context.fillRect(30, 30, 50, 50);
+        originally from apple
+        one-time draw, vs. svg "scene graph"
+        svg handles events; canvas does not
+        low-level: javascript libraries for rendering svg using canvas
+        ie9+, safari, ff, opera 9+, chrome (65-70%, same as svg)
+    o svg
+        scalable vector graphics
+        xml
+        w3c
+        draw with Inkscape etc.
+        current ff 3+, chrome 1+, ie 9+, opera 8+, safari 1+ (total about 65-70% page views at w3counter)
+        transformations, clipping paths, alpha masks, filter effects, template objects, extensibility
+        1.1 since 2001
+        going to skip 1.2 Full and go for 2.0
+        smil for animation
+            oexamples
+        plugins
+            chrome frame
+            batik
+            adobe svg viewer - discontinued
+        http://en.wikipedia.org/wiki/SVG
+        http://en.wikipedia.org/wiki/Comparison_of_layout_engines_(Scalable_Vector_Graphics)
+    o webgl
+        chrome 9+, ff 4+, safari/opera coming, no ie except with google frame
+    o vrml
+        virtual reality modeling language (formerly markup language) "vermal"
+        now x3d
+        older
+        iso standard
+        gtk+ plugin for browsers, some others, generally used for native apps
+    o flash
+    o vml
+        vector markup language
+        deprecated - svg supplanted in 2001
+        xml
+        ie only: ie 5+, not for future
+        used a lot in ms office documents, especially when told "save as web page"
+        example
+            <HTML xmlns:v="urn:schemas-microsoft-com:vml"
+            xmlns:o="urn:schemas-microsoft-com:office:office">
+            <HEAD>
+            <STYLE>
+            v\:* { behavior: url(#default#VML);}
+            o\:* { behavior: url(#default#VML);}
+            </STYLE>
+            <TITLE>VML Sample</TITLE>
+            </HEAD>
+            <BODY>
+               <v:shape
+               fillcolor="green"
+               style="position:relative;top:1;left:1;width:200;height:200"
+               path = "m 1,1 l 1,200, 200,200, 200,1 x e">
+               </v:shape>
+            </BODY>
+            </HTML>            
+        http://msdn.microsoft.com/en-us/library/bb263897(v=VS.85).aspx
+        
+
+Web Browsers 
+1 Internet Explorer 8 17.71% 
+2 Chrome 14 16.87% 
+3 Firefox 7 13.16% 
+4 Internet Explorer 9 7.33% 
+5 Internet Explorer 7 6.93% 
+6 Firefox 3.6 6.29% 
+7 Safari 5 5.56% 
+8 Chrome 15 3.36% 
+9 Firefox 6 2.93% 
+10 Internet Explorer 6 2.28% 
+
+canvas.html - one console and one canvas
+5 preloaded canvas scripts
+2 impressive canvas demos
+svg.html - 
+3 text files and way to render them
+2 impressive svg demos
+smil.html - animation
+webgl - 
+1 text file, way to render it
+vml -
+1 text file, way to render it
+vrml/x3d - 
+1 text file, way to render it
+
